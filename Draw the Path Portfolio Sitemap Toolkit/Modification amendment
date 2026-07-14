@@ -1,0 +1,7 @@
+What I am changing based on the pressure-test:
+
+Based on Claude’s pressure test, I realized my initial sitemap created unnecessary friction and diluted my core proof statement. I am making two critical changes to my portfolio flow:
+
+1. Fixing the Hook: Claude correctly pointed out that my original Hero headline only highlighted the backend/AI side, completely dropping my UI/UX expertise. I am rewriting the headline to explicitly signal both halves right at the top: "I engineer scalable backend systems and AI models, paired with intuitive, user-centric interfaces."
+
+2. Removing the Click Tax: I originally placed the 'Contact' section only at the very bottom of the funnel. To drive my single desired action without forcing recruiters to read every section, I am adding a persistent, sticky "Get in Touch" CTA to the global navigation. The action will now be available everywhere, not just at the end of a straight line.
