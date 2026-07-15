@@ -1,0 +1,38 @@
+Voice Card: Direct, technical, honest, concise, no buzzwords.
+
+Case Study 1: FlyRank Machine Learning Internship
+
+The Problem: Content teams have thousands of decaying pages but zero capacity to audit them all manually. They are guessing what to fix first.
+
+What I Did: I ignored static SQL rules and built a Machine Learning ranking pipeline (Refresh Opportunity Scoring). I framed it as a Supervised Binary Classification task to process 90-day historical data and find hidden decay patterns.
+
+The Outcome: A dynamically ranked queue based on real search signals, letting reviewers spend their limited time only on the top 50 pages with the highest recovery potential.
+
+Case Study 2: Şefim Temiz (R&D Project)
+
+The Problem: We needed a system that could automatically recognize various hospitality and service items through machine learning and present this data seamlessly to end users.
+
+What I Did: Working with my teammates Furkan Atalay and Ferhat Yıldız, under the guidance of Doç. Dr. Ömer Faruk Alçin, I tackled the hardest part: training a custom ML model using Python to accurately identify service items. We then integrated this backend intelligence with a responsive frontend built entirely in React.
+
+The Outcome: We successfully bridged advanced image recognition logic with a clean UI, winning 3rd place in the Engineering and Basic Sciences category at the 5th R&D Project Market organized by the Anatolian Universities Union.
+
+Case Study 3: Smart Glasses V2 Validation
+
+The Problem: After training the second version of a smart glasses ML model, we saw an unexpected drop in accuracy that automated tests couldn't pinpoint.
+
+What I Did: I paused the pipeline. To force a human-in-the-loop review, I organized a manual verification protocol and divided a massive dataset of 22,000 images equally among my peers (Taha, Burak, Kaan, and Türker).
+
+The Outcome: We successfully manually verified the dataset, found the noise causing the drop, and established a clean baseline for the next training round.
+
+The Bio
+I am a Software Engineering student at Inonu University, a candidate for the European Erasmus program (West Bohemia/Tomas Bata), and an ML Intern at FlyRank. I build scalable backend systems and ML pipelines, but I never ignore the frontend. If the data logic is brilliant but the UI is a mess, the system fails. I engineer both sides.
+
+The Action
+I am looking for technical roles where I can build backend systems and machine learning pipelines that humans actually want to use. Let’s talk.
+melihyilmaz2525@gmail.com | https://www.linkedin.com/in/melih-yilmaz-/
+
+Before / After
+
+Generic AI Line: "I leveraged my dynamic results-driven expertise to seamlessly optimize the dataset and synergize with my team for maximum project success."
+
+My Edited Version: "The model accuracy dropped, so I stopped the pipeline and split 22,000 images among four teammates to manually find the noise."
