@@ -1,0 +1,74 @@
+Prompt Iteration Log
+Target Task: Drafting a technical project presentation/application text for an R&D Project Market competition.
+
+Iteration 0: The Naive Prompt
+Prompt: "Write a presentation text for my software project to apply for an R&D competition."
+Output Excerpt: (The AI generated a highly generic, sales-pitch style text full of buzzwords like "synergy," "revolutionary," and "cutting-edge," without explaining what the software actually does or how it works.)
+Note on Output Difference: N/A (Baseline). The output was completely unusable for a serious engineering competition because it lacked technical depth and sounded like a cheap marketing brochure.
+
+Iteration 1: + Role Assignment
+Prompt: "Act as a strict academic evaluator and expert technical grant writer. Write a presentation text for my software project to apply for an R&D competition."
+Output Excerpt: (The AI dropped the marketing buzzwords and adopted a formal, academic tone, using phrases like "The proposed methodology..." and "Research objectives...").
+Note on Output Difference: The tone improved drastically. Assigning the "academic evaluator" role forced the AI to stop acting like a marketer and start sounding like a researcher, though the text was still empty because it didn't know my project.
+
+Iteration 2: + Context and Motivation
+Prompt: "Act as a strict academic evaluator and expert technical grant writer. Write a presentation text for my software project to apply for an R&D competition. Context: The project is called 'Şefim Temiz'. We are applying to the Engineering and Basic Sciences category at the R&D Project Market. The motivation is to show how we bridged a complex Python/ML backend (trained to recognize hospitality service items) with a responsive React frontend."
+Output Excerpt: (The AI wrote a solid technical overview, explicitly mentioning the Python ML model and React frontend, and structured the pitch around the Engineering category requirements.)
+Note on Output Difference: The output went from theoretical to concrete. Providing the context and motivation stopped the AI from hallucinating features and forced it to focus on the actual ML/React architecture and the specific competition category.
+
+Iteration 3: + Few-Shot Examples
+Prompt: "Act as a strict academic evaluator and expert technical grant writer. Write a presentation text for my software project to apply for an R&D competition. Context: The project is called 'Şefim Temiz'. We are applying to the Engineering and Basic Sciences category at the R&D Project Market. The motivation is to show how we bridged a complex Python/ML backend (trained to recognize hospitality service items) with a responsive React frontend.
+Example of the desired tone for the Problem Statement: 'Traditional hospitality systems rely on manual data entry, creating operational bottlenecks. Our system eliminates this through automated, ML-driven item recognition.' "
+Output Excerpt: (The AI perfectly mimicked the concise, problem-solution oriented tone of the example throughout the entire text, avoiding any flowery language.)
+Note on Output Difference: The few-shot example acted as a strict boundary for the AI's creativity. Instead of writing long introductory paragraphs, it immediately mirrored the punchy, engineering-focused style I provided in the example.
+
+Iteration 4: + Output Structure
+Prompt: "Act as a strict academic evaluator and expert technical grant writer. Write a presentation text for my software project to apply for an R&D competition. Context: The project is called 'Şefim Temiz'. We are applying to the Engineering and Basic Sciences category at the R&D Project Market. The motivation is to show how we bridged a complex Python/ML backend (trained to recognize hospitality service items) with a responsive React frontend.
+Example of the desired tone for the Problem Statement: 'Traditional hospitality systems rely on manual data entry, creating operational bottlenecks. Our system eliminates this through automated, ML-driven item recognition.'
+Output Structure: Format the response exactly in these four markdown sections: 1. Core Problem, 2. Technical Architecture (Backend & Frontend), 3. ML Innovation, 4. Scalability."
+Output Excerpt: (The AI generated a perfectly formatted markdown document with exactly the four requested headers, filling each with relevant technical details.)
+Note on Output Difference: The structure eliminated the AI's tendency to write a generic "Conclusion" or "Introduction." It forced the model to organize its thoughts into the exact rubric an R&D jury would use to grade the project.
+
+Iteration 5: + Step Decomposition
+Prompt: "Act as a strict academic evaluator and expert technical grant writer. Write a presentation text for my software project to apply for an R&D competition. Context: The project is called 'Şefim Temiz'. We are applying to the Engineering and Basic Sciences category at the R&D Project Market. The motivation is to show how we bridged a complex Python/ML backend (trained to recognize hospitality service items) with a responsive React frontend.
+Example of the desired tone for the Problem Statement: 'Traditional hospitality systems rely on manual data entry, creating operational bottlenecks. Our system eliminates this through automated, ML-driven item recognition.'
+Output Structure: Format the response exactly in these four markdown sections: 1. Core Problem, 2. Technical Architecture (Backend & Frontend), 3. ML Innovation, 4. Scalability.
+Step Decomposition:
+Step 1: Analyze the context and the provided example.
+Step 2: Draft the technical specifics for the ML and React integration.
+Step 3: Review the draft against the 4-section structure and refine the tone to match the strict academic evaluator role.
+Step 4: Output the final markdown."
+Output Excerpt: (The AI explicitly outputted its thought process for Steps 1, 2, and 3 before presenting the final, highly polished markdown presentation.)
+Note on Output Difference: Breaking the task into steps prevented the AI from rushing to the final output. By forcing it to "think" about the ML/React integration in Step 2 before formatting in Step 3, the technical depth of the final text became significantly more accurate and sophisticated.
+
+Cross-Model Comparison (Claude 5 vs. GPT-5)
+I ran the final Iteration 5 prompt on both Claude 5 and ChatGPT (GPT-5) to observe their handling of a highly constrained, multi-layered prompt.
+
+Tone & Accuracy: Claude 5 excelled at maintaining the "strict academic evaluator" persona. Its tone was dry, highly precise, and completely avoided filler words. GPT-5, despite the prompt, still leaked a bit of "sales-pitch" enthusiasm (e.g., using words like "seamlessly" and "groundbreaking" in the Scalability section).
+
+Structure & Step Decomposition: Both models followed the 4-part markdown structure perfectly. However, GPT-5 followed the Step Decomposition literally, printing out "Step 1...", "Step 2..." in the chat before the final output. Claude 5 internalized the steps better, using them to guide its internal generation without explicitly printing the scaffolding, resulting in a cleaner final response.
+
+Failure Points: GPT-5 failed to strictly adhere to the "no marketing buzzwords" boundary implied by the few-shot example. Claude 5's failure point was being overly brief; its "Technical Architecture" section was almost too concise and could have used more elaboration on the specific React components.
+
+Final Reusable Prompt Template
+Act as a strict academic evaluator and expert technical grant writer. Write a presentation text for my software project to apply for an R&D competition.
+
+Context: The project is called [Insert Project Name]. We are applying to the [Insert Competition Category] category at the [Insert Competition Name]. The motivation is to show how we [Insert Core Technical Achievement, e.g., bridged a complex ML backend with a responsive frontend].
+
+Example of the desired tone: "[Insert a 1-2 sentence example of how you want the problem or solution to sound, focusing on facts, not adjectives]".
+
+Output Structure: Format the response exactly in these markdown sections:
+
+Core Problem
+
+Technical Architecture
+
+[Insert Key Innovation, e.g., ML Innovation]
+
+Scalability.
+
+Step Decomposition:
+Step 1: Analyze the context and the provided tone example.
+Step 2: Draft the technical specifics for the [Insert Tech Stack] architecture.
+Step 3: Review the draft against the requested structure and refine the tone to ensure zero marketing buzzwords.
+Step 4: Output only the final markdown document.
