@@ -1,0 +1,34 @@
+The Through-Line: My Portfolio Content Map
+
+1. The One-Line Claim
+"From computer vision models to fully-featured desktop applications, I build reliable software architectures that solve real-world problems."
+
+2. The Content Map
+
+Page: Home
+
+Section 1 (Hero): The one-line claim + Professional Headshot.
+
+Section 2 (Featured Work): "Şefim Temiz" (Highlighting the 3rd place award in Engineering and real-time detection).
+
+Section 3 (Call to Action): "Explore the engineering behind my projects" -> Routes to Projects page.
+
+Page: Projects & Engineering
+
+Section 1 (AI & Vision): Autonomous UAV visual odometry project & Şefim Temiz details.
+
+Section 2 (Core Software): Java Desktop Banking Application (Highlighting the fully implemented feature set and robust architecture using precise double currency calculations).
+
+Section 3 (UI/Web): Responsive webpage design for the Software Engineering department.
+
+Section 4 (Final Call to Action): "Let's build something reliable together" -> Routes to my Email/LinkedIn for hiring or collaboration (Week 1 Action).
+
+3. The "Still Need to Gather" List
+
+A short GIF/Screen recording of the UAV simulation showing the SIFT feature matching in action when the signal is lost.
+
+The polished GitHub repository link for the completed Java Banking Application.
+
+The final responsive live link or Figma prototype link for the University Webpage.
+
+FlyRank Internship Capstone Project (Currently in progress, will add the final ML pipeline outputs once completed).
