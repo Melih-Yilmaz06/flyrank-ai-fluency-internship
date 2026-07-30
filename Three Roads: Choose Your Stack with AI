@@ -1,0 +1,16 @@
+Chosen Stack: Astro + GitHub Pages
+
+Alternatives Considered:
+
+Plain HTML/CSS + GitHub Pages
+
+Next.js (React) + Vercel
+
+Rationale:
+I chose Astro because it perfectly matches my engineering profile. My focus is on backend systems (C, Java/Spring Boot) and machine learning (Python, Computer Vision), not on complex frontend frameworks.
+
+I rejected the simplest option (Plain HTML/CSS) because maintaining a growing portfolio with architecture diagrams, image galleries for ML datasets, and code blocks would quickly become messy and look amateur without a component structure. I rejected the most powerful option (Next.js) because it introduces steep frontend complexity (routing, hydration) that I do not need right now. Since v1 of my site will be static and doesn't require a live backend, Next.js would be an expensive distraction.
+
+Can I maintain this? Yes. Astro allows me to use a component-based structure while writing mostly static HTML/CSS and Markdown. This keeps the maintenance effort very low.
+
+Does it show my work well? Absolutely. Astro's built-in Shiki support for Markdown means my Python, C, and Java code blocks will have clean syntax highlighting right out of the box, framing my technical work professionally without forcing me to become a React expert.
